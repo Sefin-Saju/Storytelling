@@ -1,4 +1,5 @@
 document.querySelector(".intro-btn").addEventListener("click",()=>{
+    document.querySelector(".img-1").classList.add("brightup");
     document.querySelector(".intro-btn").classList.add("fadeout");
     document.querySelectorAll(".x").forEach(el => {
         el.classList.add("fadeout");
@@ -23,5 +24,6 @@ document.querySelectorAll(".scroll-back").forEach(btn=>{
         prevContainer.scrollIntoView({behavior:"smooth",inline:"start"});
     })
 });
+
 
 
